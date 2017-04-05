@@ -339,6 +339,7 @@
 				EE93F92E1E94B6C800F8B532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

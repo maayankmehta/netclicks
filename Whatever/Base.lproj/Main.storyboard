@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suicide_squad_joker_jared_leto_103388_2560x1440.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-g3-uqd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-g3-uqd">
                                 <rect key="frame" x="0.0" y="28" width="375" height="188"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="188" id="p01-AG-nAG"/>
@@ -35,15 +35,25 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acj-k9-lW0">
                                                 <rect key="frame" x="0.0" y="0.0" width="122.5" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                <state key="normal" title="LOGIN">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miy-6E-qkh">
                                                 <rect key="frame" x="122.5" y="0.0" width="122" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <color key="backgroundColor" red="0.6390610933303833" green="0.2300727367401123" blue="0.23954382538795471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                                <state key="normal" title="SEARCH">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euV-VW-isj">
                                                 <rect key="frame" x="244.5" y="0.0" width="122.5" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                <state key="normal" title="SHARE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -51,7 +61,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="58o-Dk-Ktj"/>
                                     <constraint firstAttribute="trailing" secondItem="Qf9-3i-whv" secondAttribute="trailing" constant="4" id="ZmN-Tj-UlF"/>
@@ -63,26 +72,26 @@
                                 <rect key="frame" x="0.0" y="271" width="375" height="396"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="88" id="qM7-hS-WcJ" customClass="ViewCell" customModule="Whatever" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="3" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="88" id="qM7-hS-WcJ" customClass="ViewCell" customModule="Whatever" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qM7-hS-WcJ" id="7YO-GN-vgz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suicide_squad_joker_jared_leto_103388_2560x1440.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-OG-d4I">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-OG-d4I">
                                                     <rect key="frame" x="8" y="8" width="125" height="72"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="125" id="UEP-i8-uen"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhF-1e-Z0s">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhF-1e-Z0s">
                                                     <rect key="frame" x="141" y="8" width="202" height="72"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="202" id="4JG-MM-KC0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -98,7 +107,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="uhF-1e-Z0s" secondAttribute="bottom" constant="8" id="s4C-Fb-HAD"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.63906109330000005" green="0.2300727367" blue="0.23954382539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="videoImage" destination="9qP-OG-d4I" id="q9E-j8-hhw"/>
                                             <outlet property="videoTitle" destination="uhF-1e-Z0s" id="Y1L-AR-hSM"/>
@@ -107,7 +116,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VVE-g3-uqd" secondAttribute="trailing" id="3Kc-2f-gYY"/>
                             <constraint firstItem="wmU-HE-q0u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="48L-FA-aZ9"/>
@@ -153,15 +162,18 @@
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQL-cz-S0V">
-                                <rect key="frame" x="164" y="629" width="46" height="30"/>
+                                <rect key="frame" x="154" y="613" width="68" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="22"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="yM7-1a-FJI"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.63906109330000005" green="0.2300727367" blue="0.23954382539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6a5-rz-11N" firstAttribute="top" secondItem="hMo-f9-Kvb" secondAttribute="bottom" constant="8" id="Plj-Ui-Ynp"/>
                             <constraint firstItem="6a5-rz-11N" firstAttribute="leading" secondItem="gmt-3b-T2n" secondAttribute="leading" id="g87-E2-fbM"/>
@@ -178,6 +190,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="suicide_squad_joker_jared_leto_103388_2560x1440.jpg" width="2560" height="1440"/>
+        <image name="Image" width="254" height="134"/>
+        <image name="Image-1" width="560" height="289"/>
     </resources>
 </document>
