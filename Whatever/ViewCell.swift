@@ -16,5 +16,22 @@ class ViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func updateUI( _cellModel : cellModel){
+        videoTitle.text = _cellModel.videoTitle
+        
+        let url = URL(string: _cellModel.imageURL)
+        DispatchQueue.global().async {
+            do{
+                let data = try Data(contentsOf: url!)
+                DispatchQueue.global().sync {
+                    self.videoImage.image = UIImage(data: data)
+                }
+            }catch{
+                print("Error aya!!")
+            }
+            
+        }
+    }
 
-   }
+}
