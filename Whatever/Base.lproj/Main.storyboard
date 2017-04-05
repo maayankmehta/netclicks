@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Whatever" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,164 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suicide_squad_joker_jared_leto_103388_2560x1440.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-g3-uqd">
+                                <rect key="frame" x="0.0" y="28" width="375" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="p01-AG-nAG"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmU-HE-q0u">
+                                <rect key="frame" x="0.0" y="224" width="375" height="39"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qf9-3i-whv">
+                                        <rect key="frame" x="4" y="4" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acj-k9-lW0">
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miy-6E-qkh">
+                                                <rect key="frame" x="122.5" y="0.0" width="122" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euV-VW-isj">
+                                                <rect key="frame" x="244.5" y="0.0" width="122.5" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4yU-lg-pAh"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="58o-Dk-Ktj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qf9-3i-whv" secondAttribute="trailing" constant="4" id="ZmN-Tj-UlF"/>
+                                    <constraint firstItem="Qf9-3i-whv" firstAttribute="leading" secondItem="wmU-HE-q0u" secondAttribute="leading" constant="4" id="adg-2Q-Y77"/>
+                                    <constraint firstItem="Qf9-3i-whv" firstAttribute="top" secondItem="wmU-HE-q0u" secondAttribute="top" constant="4" id="bqj-qS-xbD"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KQM-9y-5X6">
+                                <rect key="frame" x="0.0" y="271" width="375" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="88" id="qM7-hS-WcJ" customClass="ViewCell" customModule="Whatever" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qM7-hS-WcJ" id="7YO-GN-vgz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suicide_squad_joker_jared_leto_103388_2560x1440.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-OG-d4I">
+                                                    <rect key="frame" x="8" y="8" width="125" height="72"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="UEP-i8-uen"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhF-1e-Z0s">
+                                                    <rect key="frame" x="141" y="8" width="202" height="72"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="202" id="4JG-MM-KC0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uhF-1e-Z0s" firstAttribute="leading" secondItem="9qP-OG-d4I" secondAttribute="trailing" constant="8" id="3pO-JK-5U1"/>
+                                                <constraint firstItem="9qP-OG-d4I" firstAttribute="leading" secondItem="7YO-GN-vgz" secondAttribute="leading" constant="8" id="Adw-82-adI"/>
+                                                <constraint firstItem="uhF-1e-Z0s" firstAttribute="top" secondItem="7YO-GN-vgz" secondAttribute="top" constant="8" id="JJD-fM-6BP"/>
+                                                <constraint firstItem="9qP-OG-d4I" firstAttribute="leading" secondItem="7YO-GN-vgz" secondAttribute="leading" constant="8" id="eIb-oL-28v"/>
+                                                <constraint firstItem="9qP-OG-d4I" firstAttribute="top" secondItem="7YO-GN-vgz" secondAttribute="top" constant="8" id="fbd-Z9-0MN"/>
+                                                <constraint firstAttribute="bottom" secondItem="9qP-OG-d4I" secondAttribute="bottom" constant="8" id="gTY-N5-nmp"/>
+                                                <constraint firstItem="9qP-OG-d4I" firstAttribute="top" secondItem="7YO-GN-vgz" secondAttribute="top" constant="8" id="kEe-0M-nGb"/>
+                                                <constraint firstAttribute="bottom" secondItem="9qP-OG-d4I" secondAttribute="bottom" constant="8" id="p2D-Fc-sc7"/>
+                                                <constraint firstAttribute="bottom" secondItem="uhF-1e-Z0s" secondAttribute="bottom" constant="8" id="s4C-Fb-HAD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="videoImage" destination="9qP-OG-d4I" id="q9E-j8-hhw"/>
+                                            <outlet property="videoTitle" destination="uhF-1e-Z0s" id="Y1L-AR-hSM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VVE-g3-uqd" secondAttribute="trailing" id="3Kc-2f-gYY"/>
+                            <constraint firstItem="wmU-HE-q0u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="48L-FA-aZ9"/>
+                            <constraint firstItem="KQM-9y-5X6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bbx-eY-1id"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KQM-9y-5X6" secondAttribute="bottom" id="GIZ-QS-kWq"/>
+                            <constraint firstItem="KQM-9y-5X6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nta-Tq-8Jf"/>
+                            <constraint firstItem="VVE-g3-uqd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S5O-Gp-rL8"/>
+                            <constraint firstAttribute="trailing" secondItem="wmU-HE-q0u" secondAttribute="trailing" id="UUx-JJ-QhF"/>
+                            <constraint firstItem="KQM-9y-5X6" firstAttribute="top" secondItem="wmU-HE-q0u" secondAttribute="bottom" constant="8" id="apx-9s-DOy"/>
+                            <constraint firstAttribute="trailing" secondItem="KQM-9y-5X6" secondAttribute="trailing" id="cY0-eu-hJ2"/>
+                            <constraint firstItem="VVE-g3-uqd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="iEF-c6-i2f"/>
+                            <constraint firstItem="VVE-g3-uqd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pfy-5a-5oC"/>
+                            <constraint firstItem="wmU-HE-q0u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r8s-Uh-cLP"/>
+                            <constraint firstItem="wmU-HE-q0u" firstAttribute="top" secondItem="VVE-g3-uqd" secondAttribute="bottom" constant="8" id="rIK-Uj-9Hg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="KQM-9y-5X6" id="pye-IU-hCd"/>
+                        <segue destination="MGV-0C-xqH" kind="showDetail" identifier="VideoVC" id="Qr3-fv-Rsf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="36.431784107946029"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="FRQ-80-Nbb">
+            <objects>
+                <viewController id="MGV-0C-xqH" customClass="VideoVC" customModule="Whatever" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hMo-f9-Kvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xl7-78-l2q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gmt-3b-T2n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6a5-rz-11N">
+                                <rect key="frame" x="0.0" y="28" width="375" height="174"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="N1P-cV-oe1"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQL-cz-S0V">
+                                <rect key="frame" x="164" y="629" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yM7-1a-FJI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6a5-rz-11N" firstAttribute="top" secondItem="hMo-f9-Kvb" secondAttribute="bottom" constant="8" id="Plj-Ui-Ynp"/>
+                            <constraint firstItem="6a5-rz-11N" firstAttribute="leading" secondItem="gmt-3b-T2n" secondAttribute="leading" id="g87-E2-fbM"/>
+                            <constraint firstAttribute="trailing" secondItem="6a5-rz-11N" secondAttribute="trailing" id="rGa-EJ-hAl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6a5-rz-11N" id="ZSb-a7-Ms2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCW-GX-gwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="39.130434782608695"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="suicide_squad_joker_jared_leto_103388_2560x1440.jpg" width="2560" height="1440"/>
+    </resources>
 </document>

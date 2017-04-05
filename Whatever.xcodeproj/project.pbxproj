@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		EE93F91E1E94B6C800F8B532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F91D1E94B6C800F8B532 /* AppDelegate.swift */; };
-		EE93F9201E94B6C800F8B532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F91F1E94B6C800F8B532 /* ViewController.swift */; };
 		EE93F9231E94B6C800F8B532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE93F9211E94B6C800F8B532 /* Main.storyboard */; };
 		EE93F9251E94B6C800F8B532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE93F9241E94B6C800F8B532 /* Assets.xcassets */; };
 		EE93F9281E94B6C800F8B532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE93F9261E94B6C800F8B532 /* LaunchScreen.storyboard */; };
+		EE93F9361E94BF8A00F8B532 /* suicide_squad_joker_jared_leto_103388_2560x1440.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE93F9351E94BF8A00F8B532 /* suicide_squad_joker_jared_leto_103388_2560x1440.jpg */; };
+		EE93F93C1E94D0E700F8B532 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F93B1E94D0E700F8B532 /* MainVC.swift */; };
+		EE93F93E1E94D10A00F8B532 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F93D1E94D10A00F8B532 /* VideoVC.swift */; };
+		EE93F9401E94D19500F8B532 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F93F1E94D19500F8B532 /* ViewCell.swift */; };
+		EE93F9421E94D2CE00F8B532 /* cellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F9411E94D2CE00F8B532 /* cellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE93F91A1E94B6C800F8B532 /* Whatever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE93F91D1E94B6C800F8B532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE93F91F1E94B6C800F8B532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE93F9221E94B6C800F8B532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE93F9241E94B6C800F8B532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE93F9271E94B6C800F8B532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE93F9291E94B6C800F8B532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE93F9351E94BF8A00F8B532 /* suicide_squad_joker_jared_leto_103388_2560x1440.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = suicide_squad_joker_jared_leto_103388_2560x1440.jpg; sourceTree = "<group>"; };
+		EE93F93B1E94D0E700F8B532 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		EE93F93D1E94D10A00F8B532 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		EE93F93F1E94D19500F8B532 /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
+		EE93F9411E94D2CE00F8B532 /* cellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		EE93F91C1E94B6C800F8B532 /* Whatever */ = {
 			isa = PBXGroup;
 			children = (
+				EE93F9341E94BA6000F8B532 /* Views */,
+				EE93F9331E94BA5300F8B532 /* Controllers */,
+				EE93F9321E94BA4D00F8B532 /* Models */,
 				EE93F91D1E94B6C800F8B532 /* AppDelegate.swift */,
-				EE93F91F1E94B6C800F8B532 /* ViewController.swift */,
 				EE93F9211E94B6C800F8B532 /* Main.storyboard */,
 				EE93F9241E94B6C800F8B532 /* Assets.xcassets */,
+				EE93F9351E94BF8A00F8B532 /* suicide_squad_joker_jared_leto_103388_2560x1440.jpg */,
 				EE93F9261E94B6C800F8B532 /* LaunchScreen.storyboard */,
 				EE93F9291E94B6C800F8B532 /* Info.plist */,
 			);
 			path = Whatever;
+			sourceTree = "<group>";
+		};
+		EE93F9321E94BA4D00F8B532 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE93F9411E94D2CE00F8B532 /* cellModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EE93F9331E94BA5300F8B532 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE93F93B1E94D0E700F8B532 /* MainVC.swift */,
+				EE93F93D1E94D10A00F8B532 /* VideoVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EE93F9341E94BA6000F8B532 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE93F93F1E94D19500F8B532 /* ViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			files = (
 				EE93F9281E94B6C800F8B532 /* LaunchScreen.storyboard in Resources */,
 				EE93F9251E94B6C800F8B532 /* Assets.xcassets in Resources */,
+				EE93F9361E94BF8A00F8B532 /* suicide_squad_joker_jared_leto_103388_2560x1440.jpg in Resources */,
 				EE93F9231E94B6C800F8B532 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE93F9201E94B6C800F8B532 /* ViewController.swift in Sources */,
+				EE93F9401E94D19500F8B532 /* ViewCell.swift in Sources */,
+				EE93F93E1E94D10A00F8B532 /* VideoVC.swift in Sources */,
+				EE93F9421E94D2CE00F8B532 /* cellModel.swift in Sources */,
 				EE93F91E1E94B6C800F8B532 /* AppDelegate.swift in Sources */,
+				EE93F93C1E94D0E700F8B532 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
